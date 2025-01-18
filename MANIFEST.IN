@@ -1,0 +1,45 @@
+# Include all Python source files in the project
+include *.py
+
+# Include the __init__.py file from all subdirectories (if it exists)
+recursive-include big_pdf_into_images *.py
+
+# Include all non-Python files that are important for the package
+include big_pdf_into_images/config.py
+include big_pdf_into_images/convertor.py
+include big_pdf_into_images/helpers.py
+include big_pdf_into_images/cli.py
+include big_pdf_into_images/help.py
+
+# Include README, LICENSE, and other documentation files (make sure they exist)
+include README.md
+include LICENSE
+
+# Include any configuration files
+include config.json
+
+# Include any other non-Python files, like settings, requirements, or scripts
+include requirements.txt
+include setup.py
+
+# Include additional directories if relevant (e.g., docs)
+graft docs
+
+# Exclude all compiled Python files (.pyc) from the package
+exclude *.pyc
+
+# Exclude test files (if any) or directories not meant for packaging
+prune tests/
+
+# Ensure that all files in the big_pdf_into_images folder, including subdirectories, are included
+recursive-include big_pdf_into_images *.json
+recursive-include big_pdf_into_images *.md
+recursive-include big_pdf_into_images *.txt
+
+# Make sure that any possible extra files like temporary or backup files are excluded
+global-exclude *.bak
+global-exclude *.swp
+global-exclude *.swo
+
+# Exclude the .git directory or other version control files if present
+prune .git

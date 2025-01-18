@@ -1,0 +1,8 @@
+pdf2image
+tqdm
+click
+colorama
+pyfiglet
+Pillow
+setuptools
+wheel
