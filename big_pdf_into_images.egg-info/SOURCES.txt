@@ -1,0 +1,10 @@
+README.md
+config.json
+setup.py
+big_pdf_into_images.egg-info/PKG-INFO
+big_pdf_into_images.egg-info/SOURCES.txt
+big_pdf_into_images.egg-info/dependency_links.txt
+big_pdf_into_images.egg-info/entry_points.txt
+big_pdf_into_images.egg-info/not-zip-safe
+big_pdf_into_images.egg-info/requires.txt
+big_pdf_into_images.egg-info/top_level.txt

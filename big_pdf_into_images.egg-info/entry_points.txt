@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-to-images = big_pdf_into_images.cli:main
